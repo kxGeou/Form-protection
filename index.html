@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Protection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="resultWrapper">
+        <p class="result"></p>
+    </div>
+    <form action="" class="registerForm">
+        <h1>Register</h1>
+        <input type="text" class="username formControl" placeholder="Podaj imie..">
+        <input type="text" class="surname formControl" placeholder="Podaj nazwisko..">
+        <input type="email" class="email formControl" placeholder="Podaj email..">
+        <input type="password" class="password formControl" placeholder="Podaj hasło..">
+        <input type="password" class="repasssword formControl" placeholder="Powtórz hasło..">
+        <input type="checkbox" class="statuteCheckbox formControl">
+        <button type="submit">Zarejestruj się</button>
+    </form>
+
+    <div class="statute">
+        <p class="statuteCheck">Imie i Nazwisko nie mogą zawierać liczb</p>
+        <p class="statuteCheck">Email musi mieć prawidłową strukturę</p>
+        <p class="statuteCheck">Hasło musi mieć conajmniej 8 znaków, liczby oraz znaki specjalne</p>
+        <p class="statuteCheck">Hasła muszą być identyczne</p>
+        <p class="statuteCheck">Regulamin musi być zaakceptowany </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+    - Formularz posiadajacy pola imie,nazwisko,email,hasło,potwierdź haslo, akceptacja regulaminu
+    - haslo mozna odslaniac i zaslaniac
+    - po wpisaniu zlych danych pod inputem pojawia sie komunikat 
+    - z prawej strony bedzie drugi bloczek pokazujacy regulamin poszczególnych pól 
+    - gdy uzytkownik odpowiednio wypelnij input, punkt w regulaminie podswietli sie na zielono 
+    - po wszytkim uzytkownik moze przeslac dane ktore wpisal a strona mu je pokaze po lewej stronie 
+-->
