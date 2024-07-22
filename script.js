@@ -64,3 +64,10 @@ registerForm.addEventListener("submit", function (e) {
         })
     }
 });
+
+/* ZADANIA NA JUTRO 
+    - Stworzenie przełącznika na hasło 
+    - Wyświetlenie komunikatu sukces z ludzikiem
+    - Nadanie wiekszej logiki
+
+*/
